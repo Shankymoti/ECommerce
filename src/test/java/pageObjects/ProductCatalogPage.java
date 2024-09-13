@@ -49,8 +49,9 @@ public class ProductCatalogPage extends BasePage {
 			System.out.println(productName);
 			if(prod.equals(productName)) {
 				selectProduct.click();
-				waitForElementToAppear(toastMessage);
 				waitForElementToDisappear(spinner);
+				waitForElementToAppear(toastMessage);
+				
 				break;
 			}
 		}
