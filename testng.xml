@@ -6,7 +6,8 @@
      <!--<class name="testCases.TC002_ProductCatalog"/> -->
     <!--  <class name="testCases.TC001_LoginTest"/>  -->
       <!--   <class name="testCases.TC003_CartTest"/> --> 
-         <class name="testCases.TC004_PlaceOrderTest"/>
+     <!--   <class name="testCases.TC004_PlaceOrderTest"/> -->
+        <class name="testCases.TC005_ConfirmationTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
