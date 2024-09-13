@@ -12,10 +12,19 @@ import pageObjects.ProductCatalogPage;
 public class TC002_ProductCatalog extends BaseClass {
 	
 	String productName = "ZARA COAT 3";
-	@Test(priority=1)
-	public void selectProductCatalog() {
+	
+	//@Test(priority=1)
+	@Test
+	public void loginToEcommerce() {
 		TC001_LoginTest lt = new TC001_LoginTest();
 		lt.verifyLogin();
+	}
+	
+	
+	//@Test(priority=2)
+	@Test(dependsOnMethods= {"loginToEcommerce"})
+	public void selectProductCatalog() {
+		
 		
 		ProductCatalogPage prodCatalogPage = new ProductCatalogPage(driver);
 		
